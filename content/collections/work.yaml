@@ -2,6 +2,8 @@ title: Work
 template: work/show
 layout: layout
 mount: ff88ed28-10d0-4a15-9ebc-3ca1472b5709
+taxonomies:
+  - categories
 revisions: false
 route: '/{mount}/{slug}'
 date: true
