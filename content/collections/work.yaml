@@ -1,0 +1,15 @@
+title: Work
+template: work/show
+layout: layout
+mount: ff88ed28-10d0-4a15-9ebc-3ca1472b5709
+revisions: false
+route: '/{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
