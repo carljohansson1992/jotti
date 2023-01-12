@@ -1,11 +1,22 @@
 
-<article class="mt-4 bg-white p-8 shadow-xl rounded-xl max-w-xl prose">
-    <div> {{ title }} </div>
-    <div> {{ first_textarea }} </div>
-    <hr>
-    <div> {{ second_header }} </div>
-    <div> {{ second_textarea }} </div>
-    <hr>
-    <div> {{ third_header }} </div>
-    <div> {{ third_textarea }} </div>
-</article>
+<div class="mt-32 bg-blue-400 p-12 border-4 border-black rounded-xl w-2/3">
+    <div class="flex mb-8">
+        <div class="w-1/2 p-4">
+            <h1 class="text-5xl mb-8 font-mono"> {{ title }} </h1>
+            <p class="font-mono leading-relaxed"> {{ first_textarea }} </p>
+        </div>
+        <div class="w-1/2 flex justify-center p-4">
+            <img class="" src="{{ glide:featured_image width="250" height="auto" }}">
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-1/2 p-4">
+            <h2 class="text-2xl mb-4 font-mono"> {{ second_header }} </h1>
+            <p class="font-mono leading-relaxed"> {{ second_textarea }} </p>
+        </div>
+        <div class="w-1/2 p-4">
+            <h2 class="text-2xl mb-4 font-mono"> {{ third_header }} </h1>
+            <p class="font-mono leading-relaxed"> {{ third_textarea }} </p>
+        </div>
+    </div>
+</div>

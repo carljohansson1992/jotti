@@ -1,4 +1,4 @@
-title: Page
+title: 'Contact Me'
 sections:
   main:
     display: Main
@@ -11,19 +11,107 @@ sections:
           validate:
             - required
       -
-        handle: content
+        handle: first_header
         field:
-          type: markdown
-          display: Content
-          localizable: true
+          input_type: text
+          antlers: false
+          display: 'First Header'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
       -
-        handle: author
+        handle: second_header
         field:
-          type: users
-          display: Author
-          default: current
-          localizable: true
-          max_items: 1
+          input_type: text
+          antlers: false
+          display: 'Second Header'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: telephone_number
+        field:
+          input_type: text
+          antlers: false
+          display: 'Telephone number'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: third_header
+        field:
+          input_type: text
+          antlers: false
+          display: 'Third Header'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: linkedin
+        field:
+          display: Linkedin
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: instagram
+        field:
+          display: Instagram
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: facebook
+        field:
+          display: Facebook
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
       -
         handle: template
         field:
@@ -31,17 +119,69 @@ sections:
           display: Template
           localizable: true
       -
-        handle: extra_text
+        handle: featured_image
         field:
-          input_type: text
-          antlers: false
-          display: 'extra text'
-          type: text
-          icon: text
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Featured_Image
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
+      -
+        handle: facebook_icon
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Facebook Icon'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          max_files: 1
+      -
+        handle: instagram_icon
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Instagram Icon'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          max_files: 1
+      -
+        handle: linkedin_icon
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Linkedin Icon'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          max_files: 1
   sidebar:
     display: Sidebar
     fields:
