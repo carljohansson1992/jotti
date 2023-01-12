@@ -1,3 +1,4 @@
+title: Archive
 sections:
   main:
     display: Main
@@ -10,22 +11,17 @@ sections:
           validate:
             - required
       -
-        handle: cta
+        handle: content
         field:
           input_type: text
           antlers: false
-          display: CTA
+          display: Content
           type: text
           icon: text
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
-      -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
       -
         handle: featured_image
         field:
@@ -49,7 +45,13 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
-          validate:
-            - required
-title: Category
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

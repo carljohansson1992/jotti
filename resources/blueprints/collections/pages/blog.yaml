@@ -1,3 +1,4 @@
+title: Blog
 sections:
   main:
     display: Main
@@ -10,11 +11,11 @@ sections:
           validate:
             - required
       -
-        handle: cta
+        handle: content
         field:
           input_type: text
           antlers: false
-          display: CTA
+          display: Content
           type: text
           icon: text
           listable: hidden
@@ -22,22 +23,13 @@ sections:
           visibility: visible
           always_save: false
       -
-        handle: content
+        handle: template
         field:
-          type: markdown
-          localizable: true
-      -
-        handle: featured_image
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Featured Image'
-          type: assets
-          icon: assets
+          hide_partials: true
+          blueprint: false
+          display: Template
+          type: template
+          icon: template
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -49,7 +41,13 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
-          validate:
-            - required
-title: Category
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

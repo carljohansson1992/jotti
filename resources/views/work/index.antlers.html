@@ -1,36 +1,29 @@
-<div class="mt-4 bg-white p-8 shadow-xl rounded-xl w-2/3">
-    <h1>{{ title }}</h1>
-    <p>{{ content }}</p>
-
-
+<div class="mt-32 mb-8 bg-blue-400 p-12 border-4 border-black rounded-xl w-9/12 flex flex-row">
+    <div class="w-1/2">
+        <h1 class="text-5xl mb-4 font-mono">{{ title }}</h1>
+        <p class="font-mono leading-relaxed">{{ content }}</p>
+    </div>
+    <div class="w-1/2 flex justify-center">
+        <img src="{{ glide:featured_image height="120" }}">
+    </div>
 </div>
 
-<div class="w-2/3 flex  ">
+<div class="w-9/12 grid grid-cols-2 gap-5">
 
     {{ taxonomy:categories }}
-    <div class="m-4 bg-gray-300 p-8 shadow-xl rounded-xl w-1/3">
-        <h2>{{ title }}</h2>
-        <div>
-            <img src="{{ featured_image }}">
+    <a href="{{ url }}">
+        <div class="bg-blue-400 p-8 border-4 border-black rounded-xl transition duration-[400ms] ease-in-out scale-100 hover:scale-105 hover:bg-blue-500">
+            <h2 class="text-3xl font-mono">{{ title }}</h2>
+            <div class="flex flex-row justify-between">
+                <p class="font-mono text-lg mt-8 pr-4">{{ cta }}</p>
+                <img src="{{ glide:featured_image height="200" }}">
+            </div>
         </div>
-        <a href="{{ url }}">Read More</a>
-    </div>
+    </a>
 
-{{ /taxonomy:categories }}
+    {{ /taxonomy:categories }}
 
-<!-- {{ collection:work }}
-
-    <div class="m-4 bg-white p-8 shadow-xl rounded-xl w-1/3">
-        <h2>{{ title }}</h2>
-        <div>
-            <img src="{{ featured_image }}">
-        </div>
-        <a href="{{ url }}">Read More</a>
-        <hr>
-        {{ categories }}
-        <a href="{{ url }}">{{ title }}</a>
-    {{ /categories }}
-    </div>
-
-{{ /collection:work }} -->
 </div>
+
+
+4612 01514 602856 2920
