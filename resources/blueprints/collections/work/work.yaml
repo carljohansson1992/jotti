@@ -10,11 +10,6 @@ sections:
           validate:
             - required
       -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
-      -
         handle: featured_image
         field:
           mode: list
@@ -30,6 +25,18 @@ sections:
           visibility: visible
           always_save: false
           max_files: 1
+      -
+        handle: content
+        field:
+          input_type: text
+          antlers: false
+          display: Content
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
   sidebar:
     display: Sidebar
     fields:
@@ -45,4 +52,12 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: categories
+        field:
+          type: terms
+          taxonomies:
+            - categories
+          display: Categories
+          mode: select
 title: Work

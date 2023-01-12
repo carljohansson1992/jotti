@@ -5,8 +5,8 @@ title: Archive
 template: work/index
 author: bd94352a-ebde-4058-b8e5-aed9ebe76ba0
 updated_by: bd94352a-ebde-4058-b8e5-aed9ebe76ba0
-updated_at: 1673525892
+updated_at: 1673539166
 extra_text: YO
-featured_image: nylle.png
+featured_image: untitled_artwork.png
 ---
 Sed ac tincidunt arcu, vel cursus magna. Quisque finibus a sapien et dignissim. Morbi venenatis augue sit amet mi ullamcorper.

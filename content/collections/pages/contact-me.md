@@ -12,10 +12,10 @@ linkedin: 'https://se.linkedin.com/'
 instagram: 'https://www.instagram.com/'
 facebook: 'https://www.facebook.com/'
 template: contact
-featured_image: nylle.png
+featured_image: untitled_artwork.png
 facebook_icon: facebook.png
 instagram_icon: instagram.png
 linkedin_icon: linkedin.png
 updated_by: bd94352a-ebde-4058-b8e5-aed9ebe76ba0
-updated_at: 1673523476
+updated_at: 1673539230
 ---

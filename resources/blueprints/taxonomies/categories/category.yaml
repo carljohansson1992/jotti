@@ -24,8 +24,15 @@ sections:
       -
         handle: content
         field:
-          type: markdown
-          localizable: true
+          input_type: text
+          antlers: false
+          display: Content
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
       -
         handle: featured_image
         field:
