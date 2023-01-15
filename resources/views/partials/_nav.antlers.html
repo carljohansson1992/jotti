@@ -1,0 +1,13 @@
+
+<nav class="flex justify-between">
+    <a href="/" class="p-4">
+        <img src="{{ glide:logo:logo height="70" }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-105">
+    </a>
+    <ul class="flex flex-row justify-between p-8 w-1/2">
+        {{nav:collection:pages}}
+            <li class="transition duration-[400ms] ease-in-out scale-100 hover:scale-110">
+                <a href="{{url}}" class="p-2 text-xl font-mono">{{title}}</a>
+            </li>
+        {{/nav:collection:pages}}
+    </ul>
+ </nav>

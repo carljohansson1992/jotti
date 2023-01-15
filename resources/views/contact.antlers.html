@@ -1,0 +1,51 @@
+
+
+<div class="mt-32 bg-blue-400 p-12 border-4 border-black rounded-xl w-9/12 max-w-7xl">
+    <div>
+        <h1 class="text-5xl mb-20 font-mono">{{ title }}</h1>
+    </div>
+    <div class="flex w-full">
+        <div class="w-1/3">
+            <h2 class="text-2xl font-mono">{{ first_header }}</h2>
+            {{ form:contact }}
+                {{ if success }} <p>Your mail has been sent!</p> {{ /if }}
+                <div class="flex flex-col pt-16 pb-4 gap-4">
+                    <label class="text-xl font-mono">Name</label>
+                    <input type="text" name="name" required class="bg-transparent border-b-2 border-black text-black">
+                    <label class="text-xl font-mono">Email Address</label>
+                    <input type="email" name="email" required class="bg-transparent border-b-2 border-black text-black">
+                    <label class="text-xl font-mono">Message</label>
+                    <textarea name="message" rows="10" required class="bg-transparent border-2 rounded-lg border-black text-black"></textarea>
+                </div>
+                <button class="border-2 border-black rounded-lg text-lg font-medium font-mono py-3 px-8 transition duration-[400ms] ease-in-out scale-100 hover:scale-95 hover:bg-blue-600">Send</button>
+            {{ /form:contact }}
+        </div>
+        <div class="w-2/3">
+            <div class="flex w-full">
+                <div class="w-1/2 px-12">
+                    <h2 class="text-2xl font-mono">{{ second_header }}</h2>
+                    <p class="text-lg font-mono pt-16 mb-4 break-words">{{ email }}</p>
+                    <p class="text-lg font-mono mb-4">{{ telephone_number }}</p>
+                    <p class="text-lg font-mono">{{ address }}</p>
+                </div>
+                <div class="w-1/2 px-12">
+                    <h2 class="text-2xl font-mono">Follow me</h2>
+                    <div class="flex flex-row justify-between pt-16">
+                        <a href="{{ linkedin }}" target="_blank">
+                            <img src="{{ glide:linkedin_icon height="40" }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-125">
+                        </a>
+                        <a href="{{ instagram }}" target="_blank">
+                            <img src="{{ glide:instagram_icon height="40" }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-125">
+                        </a>
+                        <a href="{{ facebook }}" target="_blank">
+                            <img src="{{ glide:facebook_icon height="40" }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-125">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-12 rounded-xl flex justify-center items-center">
+                <img src="{{ glide:featured_image height="300" }}">
+            </div>
+        </div>
+    </div>
+</div>

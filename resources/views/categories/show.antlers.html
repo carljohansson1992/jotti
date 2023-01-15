@@ -1,0 +1,32 @@
+
+<div class="mt-32 mb-8 bg-blue-400 p-12 border-4 border-black rounded-xl w-9/12 flex flex-row">
+    <div class="w-1/2">
+        <h1 class="text-5xl mb-4 font-mono">{{ title }}</h1>
+        <p class="font-mono leading-relaxed">{{ content }}</p>
+    </div>
+    <div class="w-1/2 flex justify-center">
+        <img src="{{ glide:featured_image height="120" }}">
+    </div>
+</div>
+<div class="w-9/12 grid grid-cols-3 gap-5">
+    {{ entries paginate="6" as="posts"}}
+    {{ posts }}
+        <a href="{{ url }}">
+            <img src="{{ featured_image }}" class="object-cover aspect-square border-4 border-black rounded-xl transition duration-[400ms] ease-in-out scale-100 hover:scale-105">
+        </a>
+    {{ /posts }}
+</div>
+    {{ paginate }}
+        <div class="flex flex-row justify-evenly items-center mt-8 w-64">
+        <a href="{{ prev_page }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-125">
+            <img src="{{ glide:logo:left_arrow width="40" }}">
+        </a>
+
+        <p class="text-lg font-mono">{{ current_page }} of {{ total_pages }}</p>
+
+        <a href="{{ next_page }}" class="transition duration-[400ms] ease-in-out scale-100 hover:scale-125">
+            <img src="{{ glide:logo:right_arrow width="40" }}">
+        </a>
+        </div>
+    {{ /paginate }}
+    {{ /entries }}

@@ -1,8 +1,11 @@
 ---
-title: Home
 id: home
+blueprint: home
+title: Home
 template: home
-blueprint: pages
+second_header: 'Second Header'
+updated_by: bd94352a-ebde-4058-b8e5-aed9ebe76ba0
+updated_at: 1672919488
 ---
 ## Welcome to your new brand Statamic site!
 
