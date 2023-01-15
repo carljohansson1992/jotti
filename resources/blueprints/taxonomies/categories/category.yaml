@@ -21,6 +21,7 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          character_limit: 80
       -
         handle: content
         field:

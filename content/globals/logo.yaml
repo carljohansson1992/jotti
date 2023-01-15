@@ -7,3 +7,5 @@ data:
   facebook_link: 'https://www.facebook.com'
   instagram_link: 'https://www.instagram.com'
   linkedin_link: 'https://www.linkedin.com'
+  right_arrow: right-arrow.png
+  left_arrow: left-arrow.png

@@ -1,5 +1,31 @@
-
-<article class="mt-4 bg-white p-8 shadow-xl rounded-xl max-w-xl prose">
-    {{ title}}
-    {{ second_header }}
-</article>
+<div class="mt-32 mb-8 bg-blue-400 p-12 w-9/12 max-w-7xl">
+    <div class="flex flex-row mb-32 border-b-2 border-black">
+        <div class="w-1/2 mb-8">
+            <h1 class="text-8xl font-mono mb-8">Jonathan Bjurbo</h1>
+            <p class="text-lg font-mono">Class aptent taciti sociosqu ad litora porta ante.
+                Maecenas pretium convallis felis, et semper morbi.
+            </p>
+        </div>
+        <div class="w-1/2">
+            <img src="{{ glide:logo:logo height="300" }}" class="object-fit">
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+        {{ taxonomy:categories }}
+        <a href="{{ url }}">
+            <div class="bg-blue-400 p-8 border-4 border-black rounded-xl transition duration-[400ms] ease-in-out scale-100 hover:scale-105 hover:bg-blue-500">
+                <h2 class="text-3xl font-mono">{{ title }}</h2>
+                <div class="flex flex-row justify-between">
+                    <p class="font-mono text-lg mt-8 pr-4">{{ cta }}</p>
+                    <img src="{{ glide:featured_image height="200" }}">
+                </div>
+            </div>
+        </a>
+        {{ /taxonomy:categories }}
+    </div>
+    <div class="flex justify-center mt-32">
+        <a href="/blog">
+            <h1 class="font-mono text-9xl animate-bounce text-black">The Blog</h1>
+        </a>
+    </div>
+</div>

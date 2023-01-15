@@ -12,16 +12,11 @@ sections:
       -
         handle: content
         field:
-          type: markdown
-          localizable: true
-      -
-        handle: template
-        field:
-          hide_partials: true
-          blueprint: false
-          display: Template
-          type: template
-          icon: template
+          input_type: text
+          antlers: false
+          display: Content
+          type: text
+          icon: text
           listable: hidden
           instructions_position: above
           visibility: visible
